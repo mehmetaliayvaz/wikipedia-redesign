@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400&display=swap');
+
+//variable
+$main-font-color: #454545;
+$placeholder-color: #bebebe;
+$a-color: #3F51B5;
+
+* {
+  font-family: 'Oxygen', sans-serif;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: $main-font-color;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+*:focus {
+  outline: 0;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+ul, h5{
+  margin: 0;
+}

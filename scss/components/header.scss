@@ -1,0 +1,50 @@
+.Header{
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  .container{
+    align-items: center;
+  }
+  
+
+  &-logo{
+    img{
+      height: 30px;
+      margin: 10px 0;
+      cursor: pointer;
+    }
+  }
+
+  &-right{
+    display: flex;
+
+    &-search{
+      margin-right: 50px;
+      display: flex;
+      align-items: center;
+
+      input{
+        border: none;
+        border-bottom: 1px solid #eee;
+        font-size: 13px;
+        padding: 5px;
+        width: 150px;
+
+        &::placeholder{
+          color: $placeholder-color;
+        }
+      }
+
+    }
+
+    &-nav{
+      display: flex;
+      align-items: center;
+
+      a{
+        margin: 0 15px;
+        font-size: 15px;
+      }
+    }
+
+  }
+}
