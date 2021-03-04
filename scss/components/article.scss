@@ -1,0 +1,22 @@
+.Article{
+
+  &-container{
+    padding: 50px 50px;
+  }
+
+  &-intro{
+    display: flex;
+
+    &-text{
+
+    }
+
+    &-info{
+      min-width: 300px;
+      margin-left: 30px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+  }
+
+}

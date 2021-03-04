@@ -130,9 +130,10 @@ template {
   font-family: 'Oxygen', sans-serif;
   box-sizing: border-box;
   font-size: 18px;
-  color: #454545;
+  color: #797979;
   list-style-type: none;
-  text-decoration: none; }
+  text-decoration: none;
+  line-height: 1.2; }
 
 *:focus {
   outline: 0; }
@@ -143,7 +144,10 @@ template {
   max-width: 1300px;
   margin: 0 auto; }
 
-ul, h5 {
+.Content {
+  display: flex; }
+
+ul, h5, p {
   margin: 0; }
 
 .Header {
@@ -176,7 +180,7 @@ ul, h5 {
         font-size: 15px; }
 
 .Sidebar {
-  width: 220px;
+  min-width: 200px;
   height: 100vh;
   padding: 50px 0;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
@@ -188,3 +192,13 @@ ul, h5 {
       font-size: 13px; }
       .Sidebar li a:visited {
         color: #3F51B5; }
+
+.Article-container {
+  padding: 50px 50px; }
+
+.Article-intro {
+  display: flex; }
+  .Article-intro-info {
+    min-width: 300px;
+    margin-left: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }

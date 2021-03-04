@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400&display=swap');
 
 //variable
-$main-font-color: #454545;
+$main-font-color: #797979;
 $placeholder-color: #bebebe;
 $a-color: #3F51B5;
 
@@ -12,6 +12,7 @@ $a-color: #3F51B5;
   color: $main-font-color;
   list-style-type: none;
   text-decoration: none;
+  line-height: 1.2;
 }
 
 *:focus {
@@ -25,6 +26,11 @@ $a-color: #3F51B5;
   margin: 0 auto;
 }
 
-ul, h5{
+.Content{
+  display: flex;
+}
+
+ul, h5, p{
   margin: 0;
 }
+
