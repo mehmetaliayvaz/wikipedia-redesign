@@ -2,18 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
 
 //variable
-$main-font-color: #797979;
+$main-font-color: #6e6e6e;
 $placeholder-color: #bebebe;
 $a-color: #3F51B5;
 
 * {
   font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 14px;
   color: $main-font-color;
   list-style-type: none;
   text-decoration: none;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 *:focus {
@@ -31,8 +31,12 @@ $a-color: #3F51B5;
   display: flex;
 }
 
-ul, li, h5, p, h3{
+ul, li, h3, h5, p {
   margin: 0;
+}
+
+h4{
+  margin: 10px 0;
 }
 
 h3{

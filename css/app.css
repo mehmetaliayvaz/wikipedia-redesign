@@ -130,11 +130,11 @@ template {
 * {
   font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
-  font-size: 16px;
-  color: #797979;
+  font-size: 14px;
+  color: #6e6e6e;
   list-style-type: none;
   text-decoration: none;
-  line-height: 1.5; }
+  line-height: 1.7; }
 
 *:focus {
   outline: 0; }
@@ -148,8 +148,11 @@ template {
 .Content {
   display: flex; }
 
-ul, li, h5, p, h3 {
+ul, li, h3, h5, p {
   margin: 0; }
+
+h4 {
+  margin: 10px 0; }
 
 h3 {
   font-size: 25px; }
@@ -188,7 +191,8 @@ hr {
 
 .Sidebar {
   min-width: 200px;
-  height: 100vh;
+  flex-grow: 0;
+  flex-shrink: 0;
   padding: 50px 0;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
   .Sidebar li {
@@ -220,6 +224,7 @@ hr {
         color: #3F51B5; }
   .Article-intro-info {
     min-width: 270px;
+    height: 100%;
     margin-left: 30px;
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
@@ -230,6 +235,16 @@ hr {
     .Article-intro-info-list {
       display: flex; }
       .Article-intro-info-list ul {
-        padding: 0; }
+        padding: 10px 10px 0 0; }
       .Article-intro-info-list li {
-        font-size: 13px; }
+        font-size: 13px;
+        padding: 5px; }
+      .Article-intro-info-list #left-ul {
+        font-weight: bold; }
+      .Article-intro-info-list #right-ul {
+        width: 100%; }
+
+.Article .references a {
+  font-size: 13px; }
+  .Article .references a:visited {
+    color: #3F51B5; }
