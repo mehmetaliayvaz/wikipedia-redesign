@@ -1,0 +1,31 @@
+@media screen and (max-width:992px){
+  .Sidebar{
+    display: none;
+  }
+
+
+}
+
+@media screen and (max-width: 768px){
+  .Article-intro{
+    display: flex;
+    flex-direction: column;
+
+    &-info{
+      margin-left: 0;
+    }
+  }
+
+  .Header-right{
+
+    &-search, &-nav{
+      display: none;
+    }
+
+    &-menu{
+      display: flex;
+      align-items: center;
+    }
+  }
+
+}

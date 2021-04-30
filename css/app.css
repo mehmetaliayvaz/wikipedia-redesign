@@ -1,5 +1,4 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
 html {
   line-height: 1.15;
@@ -130,8 +129,8 @@ template {
 * {
   font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
-  font-size: 14px;
-  color: #6e6e6e;
+  font-size: 15px;
+  color: #454545;
   list-style-type: none;
   text-decoration: none;
   line-height: 1.7; }
@@ -164,10 +163,14 @@ hr {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
   .Header .container {
     align-items: center; }
-  .Header-logo img {
-    height: 30px;
-    margin: 10px 0;
-    cursor: pointer; }
+  .Header-logo {
+    display: flex;
+    align-items: center;
+    padding: 15px; }
+    .Header-logo img {
+      height: 30px;
+      margin-left: 10px;
+      cursor: pointer; }
   .Header-right {
     display: flex; }
     .Header-right-search {
@@ -186,8 +189,13 @@ hr {
       display: flex;
       align-items: center; }
       .Header-right-nav a {
-        margin: 0 15px;
-        font-size: 15px; }
+        font-size: 15px;
+        margin-right: 15px; }
+    .Header-right-menu {
+      display: none; }
+      .Header-right-menu svg {
+        cursor: pointer;
+        margin-right: 20px; }
 
 .Sidebar {
   min-width: 200px;
@@ -225,7 +233,7 @@ hr {
   .Article-intro-info {
     min-width: 270px;
     height: 100%;
-    margin-left: 30px;
+    margin: 0 0 30px 30px;
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
     .Article-intro-info-image img {
@@ -248,3 +256,19 @@ hr {
   font-size: 13px; }
   .Article .references a:visited {
     color: #3F51B5; }
+
+@media screen and (max-width: 992px) {
+  .Sidebar {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  .Article-intro {
+    display: flex;
+    flex-direction: column; }
+    .Article-intro-info {
+      margin-left: 0; }
+  .Header-right-search, .Header-right-nav {
+    display: none; }
+  .Header-right-menu {
+    display: flex;
+    align-items: center; } }

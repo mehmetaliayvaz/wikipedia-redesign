@@ -7,9 +7,13 @@
   
 
   &-logo{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+
     img{
       height: 30px;
-      margin: 10px 0;
+      margin-left: 10px;
       cursor: pointer;
     }
   }
@@ -41,8 +45,17 @@
       align-items: center;
 
       a{
-        margin: 0 15px;
         font-size: 15px;
+        margin-right: 15px;
+      }
+    }
+
+    &-menu{
+      display: none;
+
+      svg{
+        cursor: pointer;
+        margin-right: 20px;
       }
     }
 
