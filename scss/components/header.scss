@@ -4,6 +4,28 @@
   .container{
     align-items: center;
   }
+
+  .mobile-menu{
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: .3s opacity ease, .3s visibility ease;
+    max-height: 0;
+    overflow: hidden;
+    
+    a{
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      border-top: 1px solid $hover;
+      transition: 0.3s;
+      
+      &:hover{
+        background-color: $hover;
+      }
+    }
+  }
   
 
   &-logo{
