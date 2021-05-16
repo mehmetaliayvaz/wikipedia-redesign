@@ -10,7 +10,7 @@
 npm install
 ```
 
-## Projeyi çalıştırma için
+## Projeyi çalıştırmak için
 
 ```
 gulp watch
