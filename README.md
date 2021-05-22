@@ -1,4 +1,6 @@
-# Wikipedia.org Redesign
+## Wikipedia.org Redesign
+
+Figma ile wikipedia.org'u yeniden tasarladım. Scss ile kodladım.
 
 [Demo](https://wikipedia-redesign.vercel.app/)
 
